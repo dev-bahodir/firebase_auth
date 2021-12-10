@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_simple"
+    app:startDestination="@id/firstWindowFragment">
+
+    <fragment
+        android:id="@+id/firstWindowFragment"
+        android:name="dev.bahodir.entrancelessontofirebasedatabase.fragment.FirstWindowFragment"
+        android:label="fragment_first_window"
+        tools:layout="@layout/fragment_first_window" >
+        <action
+            android:id="@+id/action_firstWindowFragment_to_secondWindowFragment"
+            app:destination="@id/secondWindowFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/secondWindowFragment"
+        android:name="dev.bahodir.entrancelessontofirebasedatabase.fragment.SecondWindowFragment"
+        android:label="fragment_second_window"
+        tools:layout="@layout/fragment_second_window" >
+        <action
+            android:id="@+id/action_secondWindowFragment_to_thirdWindowFragment"
+            app:destination="@id/thirdWindowFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/thirdWindowFragment"
+        android:name="dev.bahodir.entrancelessontofirebasedatabase.fragment.ThirdWindowFragment"
+        android:label="fragment_third_window"
+        tools:layout="@layout/fragment_third_window" />
+</navigation>

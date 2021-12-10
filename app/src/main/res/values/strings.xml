@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Entrance Lesson To FireBase Database</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="client_id">164268403048-uug33obhhr8ir1bigqo7lhl0j7l7p3kr.apps.googleusercontent.com</string>
+
+
+</resources>
